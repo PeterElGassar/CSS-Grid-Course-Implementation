@@ -1,0 +1,12 @@
+/* My soultion */
+.grid{
+    display: grid;
+    grid-template: 90px 300px 150px/ auto 250px;
+    grid-gap: 10px;
+}
+
+
+.grid div:nth-child(1),div:last-child{
+    grid-column:1/span 2 ;
+}
+

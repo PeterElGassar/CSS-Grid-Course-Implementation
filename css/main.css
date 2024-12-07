@@ -3,13 +3,15 @@
     display: grid;
 
     /* grid-template-rows:100px 200px 100px;
- grid-template-columns:100px auto 200px; */
-    grid-template: [row1] 100px [row2] 100px/200px auto 150px;
+    grid-template-columns:100px auto 200px; */
+    grid-template: 100px 100px/200px auto 150px;
+    grid-gap: 10px;
+
 }
 
 
 /* Arrange Grid item */
-.grid div:nth-child(1){
+/* .grid div:nth-child(1){
     grid-row: auto / span 2;
 }
 
@@ -23,4 +25,4 @@
     grid-row-end: row1;
     grid-column-start: 1;
     grid-column-end: 3;
-}
+} */
