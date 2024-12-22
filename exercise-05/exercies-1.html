@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ultimate CSS Grid Course, (c) Peter Sommerhoff</title>
+    <link rel="stylesheet" href="/css/base.css">
+
+    <!-- Remove this line for offline development: -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet">
+
+    <style>
+        .grid {
+            display: grid;
+            grid-gap: 10px;
+            border: solid 2px green;
+            height: 450px;
+            background: #989898;
+            grid-template: 100px 100px/repeat(3, 25%);
+           
+        }
+        /* exercise-1 */
+        /* .ex{
+            justify-content: center;
+            align-content: end;
+        } */
+        /* exercise-2 */
+        /* .ex{
+            justify-content: space-between;
+            align-content: center;
+        } */
+        /* exercise-3 */
+        /* .ex{
+            justify-items: end;
+            align-items: center;
+        } */
+
+
+
+
+        /*  */
+        .ex{
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ex div:nth-child(1){
+            align-self: center;
+            justify-self: center;
+        }
+
+        .ex div:nth-child(2){
+            justify-self: end;
+            align-self: stretch;
+        }
+
+        .ex div:nth-child(3){
+            align-self: center;
+        }
+        
+        /*   */
+        .ex div:nth-child(4){
+            align-self: start;
+            justify-self: end;
+        }
+
+        .ex div:nth-child(5){
+            align-self: end;
+            justify-self: center;
+        }
+        
+        .ex div:nth-child(6){
+            align-self: stretch;
+            justify-self: center;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <h2>Ultimate CSS Grid Course</h2>
+    <p>This is the template you can use to follow along the course.</p>
+    <div class="grid ex">
+        <div>Grid Item 1</div>
+        <div>Grid Item 2</div>
+        <div>Grid Item 3</div>
+        <div>Grid Item 4</div>
+        <div>Grid Item 5</div>
+        <div>Grid Item 6</div>
+    </div>
+</body>
+
+</html>
