@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ultimate CSS Grid Course, (c) Peter Sommerhoff</title>
+    <link rel="stylesheet" href="/css/base.css">
+
+    <!-- Remove this line for offline development: -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet">
+
+    <style>
+        .grid {
+            display: grid;
+            margin: 0 auto;
+            grid-gap: 5px;
+            font-family: Ubuntu, sans-serif;
+            grid-template: repeat(3, 300px)/repeat(4, 1fr);
+        }
+
+        .item {
+            background-color: #cfcfcf;
+        }
+
+        .sub-grid {
+            display: grid;
+            grid-gap: 5px;
+            grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+        }
+
+        .sub-grid div,
+        .sub-grid-2 div,
+        .sub-grid-3 div {
+            background-color: #efefef;
+        }
+
+
+        .sub-grid-2 {
+            display: grid;
+            grid-gap: 5px;
+            grid-template: 1fr 1fr/ 1fr;
+        }
+
+        .sub-grid-3 {
+            display: grid;
+            grid-gap: 5px;
+            grid-template: 1fr / 1fr 1fr;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="grid">
+        <div class="item">item 1</div>
+        <div class="sub-grid">
+            <div>item 1</div>
+            <div>item 2</div>
+            <div>item 3</div>
+            <div>item 4</div>
+        </div>
+        <div class="sub-grid">
+            <div>item 1</div>
+            <div>item 2</div>
+            <div>item 3</div>
+            <div>item 4</div>
+        </div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="sub-grid-2">
+            <div>item 1</div>
+            <div>item 2</div>
+        </div>
+        <div class="sub-grid-3">
+            <div>item 1</div>
+            <div>item 2</div>
+        </div>
+        <div class="item">item 8</div>
+        <div class="sub-grid">
+            <div>item 1</div>
+            <div>item 2</div>
+            <div>item 3</div>
+            <div>item 4</div>
+        </div>
+        <div class="item">item 10</div>
+        <div class="item">item 11</div>
+        <div class="sub-grid">
+            <div>item 1</div>
+            <div>item 2</div>
+            <div>item 3</div>
+            <div>item 4</div>
+        </div>
+    </main>
+</body>
+
+</html>
